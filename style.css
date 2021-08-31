@@ -1,0 +1,51 @@
+/* Import Poppins - Google Font */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f1f1f1;
+}
+.box {
+  /* add position relative */
+  position: relative;
+  /* styling - look */
+  background: #4561ff;
+  width: 550px;
+  height: 340px;
+  /* making the border round */
+  border-radius: 20px;
+  /* centering it */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* padding */
+  padding: 40px;
+}
+p {
+  color: #fff;
+}
+/* lets make it more beutiful my adding selection */
+::selection {
+  background: #0425e2;
+  color: #fff;
+}
+/* now main part */
+.box::after {
+  position: absolute;
+  content: '';
+  top: 0;
+  right: 0;
+  /* border width */
+  border-width: 0 40px 40px 0px;
+  /* styling */
+  border-style: solid;
+  /* main coloring */
+  border-color: #0425e2 #f1f1f1;
+}
